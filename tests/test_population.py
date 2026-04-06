@@ -16,5 +16,3 @@ def test_live_population(setup):
 
     except KeyboardInterrupt:
         print("\nStopped by user")     # Stop manually
-    finally:
-        driver.quit()
