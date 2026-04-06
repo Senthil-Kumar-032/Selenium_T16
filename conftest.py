@@ -5,7 +5,6 @@ from selenium import webdriver
 def setup():
     driver = webdriver.Chrome()        # Launch Chrome browser
     driver.maximize_window()           # Maximize window
-    # Open target URL
-    driver.get("https://www.theworldcounts.com/challenges/planet-earth/state-of-the-planet/world-population-clock-live")
+    driver.get("https://www.theworldcounts.com/challenges/planet-earth/state-of-the-planet/world-population-clock-live")  # Open target URL
     yield driver                      # Provide driver to test
     driver.quit()                     # Close browser after test
