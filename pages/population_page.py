@@ -13,7 +13,7 @@ class PopulationPage:
     population_xpath = "(//span[contains(@class,'counter-number')])[1]"  # Population value
 
     def accept_cookies(self):
-        """Handle cookie popup"""
+        #   Handle cookie popup
         try:
             button = self.wait.until(
                 EC.element_to_be_clickable((By.XPATH, self.cookie_button_xpath))  # Wait for button
